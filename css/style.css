@@ -1,0 +1,31 @@
+body {
+  font-family: cursive;
+  background-color: #ccc;
+}
+
+footer{
+  text-align: center;
+  background-color: #faebebfe;
+  color: hsl(30, 4%, 11%);
+  font-size: 8px;
+  padding: 1%;
+}
+
+section{
+  margin: 7%;
+}
+
+form {
+  display: flex;
+  flex-direction: column; 
+  gap: 2%;                 
+}
+
+textarea {
+  height: 150px;
+}
+
+button{
+  margin: 2% 0 0 0 ;
+  width: 10%;
+}
