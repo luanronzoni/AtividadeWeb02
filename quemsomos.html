@@ -4,72 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-      <header>
-    <figure>
-      <img src="./imagens/logo_home.jpg" alt="logo" width="77px" border-radius="10px">
-    </figure>
 
-    <nav>
-      <a class="ancor" href="index.html">Home</a>
-      <a class="ancor" href="quemsomos.html"> Quem Somos</a>
-      <a class="ancor" href="contato.html"> Contato</a>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+        <img src="./imagens/logo_home.jpg" alt="logo" class="logo-navbar">
+        </a>
+
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+
+       <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link ancor" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ancor" href="quemsomos.html">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ancor" href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     </nav>
   </header>
 
 <main>
+  <div class="container mt-3">
+  <div class="row g-4">
 
-    <section>
-    <p>QUEM SOMOS<p></p>
-    <h1>Um pouco sobre nós</h1>
-    </section>
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title">Nossa missão</h3>
+          <p class="card-text">Unir tecnologia, estrutura moderna e acompanhamento profissional em um só lugar.</p>
+        </div>
+      </div>
+    </div>
 
-    <section>
-        <h2>Quem somos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, nisi distinctio! Enim nobis odio accusamus aspernatur repellendus iste, asperiores nemo dolor ipsam, nam nisi? Temporibus ex maxime dolor tempora ut! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio autem, distinctio omnis sequi aliquid quam quos porro in eius, dolore temporibus aliquam harum adipisci placeat ut, beatae necessitatibus? Eveniet, omnis.</p>
-    </section>
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title">Nossos valores</h3>
+          <p class="card-text">Comprometimento com resultado, respeito ao ritmo de cada aluno e evolução constante.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <section class="cards">
+<div class="container my-5">
+  <h2 class="mb-4">Perguntas frequentes</h2>
 
-      <article class="card">
-        <figure class="card_icon"></figure>
-        <h3>Seu horario a qualquer momento</h3>
-        <p>Faça seu horario, sem pressao. estamos 24 hrs pra vc.</p>
-      </article>
+  <div class="accordion" id="faqAccordion">
 
-      <article class="card">
-        <figure class="card_icon"></figure>
-        <h4>Preço acessivel para todos</h4>
-        <p> Oferecemos diversas opcoes de pagamento, com planos ate 12x</p>
-      </article>
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="heading1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+          Como funciona a matrícula?
+        </button>
+      </h3>
+      <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Você pode se matricular diretamente na recepção ou pelo site. Não exigimos exame médico prévio, mas recomendamos avaliação física antes de iniciar.
+        </div>
+      </div>
+    </div>
 
-    </section>
-    
-        <section class="cards">
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="heading2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+          Preciso de experiência prévia?
+        </button>
+      </h3>
+      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Não. Temos acompanhamento profissional para iniciantes e treinos adaptados a qualquer nível.
+        </div>
+      </div>
+    </div>
 
-      <article class="card">
-        <figure class="card_icon"></figure>
-        <h5>Seu horario a qualquer momento</h5>
-        <p>Faça seu horario, sem pressao. estamos 24 hrs pra vc.</p>
-      </article>
+    <div class="accordion-item">
+      <h3 class="accordion-header" id="heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          Quais os horários de funcionamento?
+        </button>
+      </h3>
+      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Funcionamos 24 horas, todos os dias da semana, com acesso por catraca.
+        </div>
+      </div>
+    </div>
 
-      <article class="card">
-        <figure class="card_icon"></figure>
-        <h6>Preço acessivel para todos</h6>
-        <p> Oferecemos diversas opcoes de pagamento, com planos ate 12x</p>
-      </article>
+  </div>
+</div>
 
-    </section>
+<div class="container my-5">
+  <div class="row g-4">
 
-    <section>
-      <h1>Objetivos</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti laboriosam quibusdam ratione nisi dolor sed, obcaecati aut labore odit temporibus libero, totam id dolorum sunt vitae at! Omnis, sint!</p>
-    </section>
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <span class="badge bg-warning text-dark mb-2">Mais procurado - R$99,90</span>
+          <h3 class="card-title">Plano Família</h3>
+          <p class="card-text">Matricule toda a família com desconto progressivo e horários flexíveis para cada integrante.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h3 class="card-title">Estrutura completa</h3>
+          <p class="card-text">Equipamentos atualizados, área de musculação, cardio e espaço para aulas em grupo.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 </main>
 
-<footer><p>&copy;   NTN - 2026 Todos os direitos reservados</p></footer>
+<footer class="footer-custom text-light text-center py-3">
+  <p class="mb-0 small">&copy; NTN - 2026 Todos os direitos reservados</p>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
