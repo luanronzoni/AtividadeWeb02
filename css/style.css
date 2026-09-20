@@ -13,7 +13,7 @@ body {
 }
 
 .carousel-item img {
-  height: 500px;
+  height: 250px;
   object-fit: cover;
   object-position: center;
 }
@@ -23,7 +23,6 @@ body {
     height: 500px;
   }
 }
-
 .card {
   background-color: #1e1e1e;
   border: none;
